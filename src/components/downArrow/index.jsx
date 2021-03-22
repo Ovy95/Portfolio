@@ -14,6 +14,7 @@ align-items: center;
 border:2px solid transparent;
 transition: all 250ms ease-in-out;
 cursor: pointer;
+
  
 
 &:hover {

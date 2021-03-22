@@ -14,7 +14,7 @@ display: inline-block;
 const LogoImg = styled.img`
 width: auto;
 height: 250px;
-margin-left: -1px;
+margin-right: -15px;
 `;
 
 export function Logo(props){
