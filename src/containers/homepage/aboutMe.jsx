@@ -4,7 +4,8 @@ import styled from "styled-components"
 
 import { Logo } from "../../components/profilePic/picture"
 import { DownArrow } from "../../components/downArrow/index"
-import { Element } from 'react-scroll'
+import { Element, scroller } from 'react-scroll'
+import { Marginer } from "../../components/marginer";
 
 const AboutMeContainer = styled.div`
 width: auto;
@@ -34,19 +35,29 @@ const DownArrowContainer = styled.div`
 `
 
 export function AboutMe(props) {
+
+  const scrollToNextSection = () => {
+    scroller.scrollTo("projectSection", { smooth: true, duration: 1500})
+  }
+
   return (
   <Element name="aboutMe">
-  <AboutMeContainer>
-    <BackgroundFilter>
+    <AboutMeContainer>
 
-    <h1>Hi there 👋  </h1>
-    <h3>Welcome to my personal portfolio</h3>
-    <Logo></Logo>
-  <DownArrowContainer>
-    <DownArrow/>
-  </DownArrowContainer>
-  </BackgroundFilter>
-  </AboutMeContainer>
+            <h1>Hi there 👋  </h1>
+            <Marginer direction="vertical" margin="2em" />
+            <Marginer direction="vertical" margin="2em" />
+
+            <h3>Welcome to my personal portfolio</h3>
+            <Marginer direction="vertical" margin="4em" />
+
+            <Logo></Logo>
+            <Marginer direction="vertical" margin="6em" />
+        <DownArrowContainer onClick={scrollToNextSection}>
+            <DownArrow/>
+        </DownArrowContainer>
+
+    </AboutMeContainer>
   </Element>
   )
 }
