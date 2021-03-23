@@ -37,10 +37,18 @@ export function ProjectSection(props) {
       <UpArrowContainer onClick={scrollToNextSection} >
         <UpArrow/>
       </UpArrowContainer>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+
+
     <Marginer direction="vertical" margin="20em"/>
     <Marginer direction="vertical" margin="4em"/>
-
+  
     <Marginer direction="vertical" margin="4em"/>
+
     <Projects/>
         
         
