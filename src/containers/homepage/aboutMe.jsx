@@ -3,7 +3,7 @@ import React from 'react'
 import styled from "styled-components"
 
 import { Logo } from "../../components/profilePic/picture"
-import { DownArrow } from "../../components/downArrow/index"
+import { DownArrow } from "../../components/ArrowsComponents/downArrow/index"
 import { Element, scroller } from 'react-scroll'
 import { Marginer } from "../../components/marginer";
 

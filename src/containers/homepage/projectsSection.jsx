@@ -2,10 +2,11 @@ import React from 'react'
 import { Element, scroller } from 'react-scroll'
 import styled from 'styled-components'
 
-import {SectionTitle} from '../../components/sectionTitle/index'
-import { DownArrow } from "../../components/downArrow/index"
-import { UpArrow } from "../../components/upArrow/index"
+
+
+import { UpArrow } from "../../components/ArrowsComponents/upArrow/index"
 import { Marginer } from "../../components/marginer";
+import { Projects } from "../../components/projectComponents/index"
 
 
 const ProjectContainer = styled(Element)`
@@ -13,6 +14,7 @@ const ProjectContainer = styled(Element)`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items:center
 `;
 
 
@@ -30,16 +32,16 @@ export function ProjectSection(props) {
 
     return (
       <Element name="projectSection">
-    <ProjectContainer> 
-    <Marginer direction="vertical" margin="4em" />
-
-
-       
+    <ProjectContainer>
       
-      <SectionTitle>Here are some of my projects</SectionTitle>
       <UpArrowContainer onClick={scrollToNextSection} >
-      <UpArrow/>
-        </UpArrowContainer>
+        <UpArrow/>
+      </UpArrowContainer>
+    <Marginer direction="vertical" margin="20em"/>
+    <Marginer direction="vertical" margin="4em"/>
+
+    <Marginer direction="vertical" margin="4em"/>
+    <Projects/>
         
         
         
