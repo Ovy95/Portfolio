@@ -23,14 +23,14 @@ const menu = [
   {
     id: 4,
     title: 'Thermostat',
-    category: 'Javascript',
+    category: 'JavaScript',
     img: './images/Thermostat.png',
     desc: `This was our first JavaScript project at Makers. It was to create the logic for a thermostat in Js being able to interact with it increasing and decreasing the temperature. This included having a min and max temperature as well as power-saving modes which would also restrict temperatures. Along with this, there is a Weather app Api which by default gets the current temperature in London, this can be changed by using the search box to enter in another location to get the temperature of that location.`,
   },
   {
     id: 5,
     title: 'Gilded Rose tech test',
-    category: 'Javascript',
+    category: 'JavaScript',
     img: `./images/GildedRose.jpeg`,
     desc: `The gilded-rose kata is designed to practice rescuing legacy code safely by writing a robust characterisation test, refactoring the code into well-designed units, and then backfilling those units with more focused tests. Along the ability to implement new features.`,
   },
@@ -58,7 +58,7 @@ const menu = [
   {
     id: 9,
     title: 'Bank tech test',
-    category: 'Javascript',
+    category: 'JavaScript',
     img: './images/BankTecTest.png',
     desc: `Having attempted this in Ruby and not being able to solve the problem during my time at Makers. I decided to attempt this again in JavaScript to help grow my process better. The task is to create a bank app to the specifications listed in the Requirements Section.`,
   },

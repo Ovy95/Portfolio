@@ -13,13 +13,22 @@ const ProjectsStyle = styled.div`
   
   `
 export function Projects(props){
-  const [projectItems, setprojectItems] = useState(items);
+  const [projectItems, setProjectItems] = useState(items);
   const [categories, setcategories] = useState([]);
+
+  const filterItems = (category) => {
+    if(category === 'all'){
+      setProjectItems(items)
+      return
+    }
+  const newItems = items.filter((item) => item.category === category)
+    setProjectItems(newItems)
+  }
 
   return ( <ProjectsStyle>
     <h2>These are my projects</h2>
 
-    <Categories />
+    <Categories filterItems={filterItems}/>
     <ProjectList items={projectItems}/>
  
   </ProjectsStyle>

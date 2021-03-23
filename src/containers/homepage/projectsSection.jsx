@@ -11,7 +11,7 @@ import { Projects } from "../../components/projectComponents/index"
 
 const ProjectContainer = styled(Element)`
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items:center
@@ -37,11 +37,7 @@ export function ProjectSection(props) {
       <UpArrowContainer onClick={scrollToNextSection} >
         <UpArrow/>
       </UpArrowContainer>
-      <h1></h1>
-      <h1></h1>
-      <h1></h1>
-      <h1></h1>
-      <h1></h1>
+      
 
 
     <Marginer direction="vertical" margin="20em"/>
