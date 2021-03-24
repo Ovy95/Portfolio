@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 
 import { UpArrow } from "../../components/ArrowsComponents/upArrow/index"
-import { Element, scroller } from 'react-scroll'
+import { Button, Element, scroller } from 'react-scroll'
 import { Marginer } from "../../components/marginer";
 
 const GetInTouchContainer = styled.div`
@@ -26,6 +26,14 @@ display: flex;
 flex-direction: column;
 align-items: center;
 `;
+const CvContainerButton = styled.div`
+width: 100%;
+height: 100%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+`;
 
 const UpArrowContainer = styled.div`
   position: absolute;
@@ -33,7 +41,7 @@ const UpArrowContainer = styled.div`
   left: 50%;
   transform: translateX(-50%);
 `
-
+const link = "https://drive.google.com/file/d/1DrDYlk7VQ0FsRzFDc2hIao6t8v1jaXkK/view?usp=sharing"
 export function GetInTouch(props) {
 
   const scrollToProjectSection = () => {
@@ -47,15 +55,18 @@ export function GetInTouch(props) {
     <UpArrowContainer onClick={scrollToProjectSection}>
             <UpArrow/>
     </UpArrowContainer>
-  
-    <h1>Get in touch</h1>
+    <Marginer direction="vertical" margin="12em" />
+    <h2>Get in touch</h2>
+
+    
+    
+
+   
 
 
-
-
-
-         
-        
+    <CvContainerButton>
+          <a href={link} target="_blank" className='filter-btn'>Resume</a>
+    </CvContainerButton>
     </GetInTouchContainer>
   </Element>
   )
