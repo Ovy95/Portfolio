@@ -1,6 +1,7 @@
 const menu = [
   {
     id: 1,
+    link: 'https://github.com/Acknowledge-App/Acknowledge',
     title: 'Achknowledge',
     category: 'React',
     img: './images/1.png',
@@ -8,6 +9,7 @@ const menu = [
   },
   {
     id: 2,
+    link: 'http://mnemonic-game.herokuapp.com/',
     title: 'mnemonic',
     category: 'React',
     img: './images/mnemonic.png',
@@ -15,6 +17,7 @@ const menu = [
   },
   {
     id: 3,
+    link: 'https://github.com/Peter2-71828/aceBook-PingPong',
     title: 'aceBook-PingPong',
     category: 'Ruby on Rails',
     img: './images/AceBook.png',
@@ -22,6 +25,7 @@ const menu = [
   },
   {
     id: 4,
+    link: 'https://github.com/Ovy95/Thermostat',
     title: 'Thermostat',
     category: 'JavaScript',
     img: './images/Thermostat.png',
@@ -29,6 +33,7 @@ const menu = [
   },
   {
     id: 5,
+    link: 'https://github.com/Ovy95/Gilded-rose-tech-test',
     title: 'Gilded Rose tech test',
     category: 'JavaScript',
     img: `./images/GildedRose.jpeg`,
@@ -50,13 +55,15 @@ const menu = [
   },
   {
     id: 8,
-    title: 'Realtime chat application',
+    title: 'Realtime Chat-Application',
+    link: 'https://github.com/Ovy95/Chat-Application-Go-React',
     category: 'Golang',
     img: './images/Chatapplication.png',
     desc: `Realtime chat application built to understand Websockets with Go`,
   },
   {
     id: 9,
+    link: 'https://github.com/Ovy95/Bank_tec_TestJS',
     title: 'Bank tech test',
     category: 'JavaScript',
     img: './images/BankTecTest.png',
