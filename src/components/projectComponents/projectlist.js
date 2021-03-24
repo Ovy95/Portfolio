@@ -8,7 +8,7 @@ const ProjectList = ({ items }) => {
         const { id, title, img, desc,link} = menuItem;
         return (
           <article key={id} className='menu-item'>
-          <a href={link}><img src={img} alt={title} className='photo' /></a>
+          <a href={link} target="_blank"><img src={img} alt={title} className='photo' /></a>
           <div className='item-info'>
             <header>
           <h4>{title}</h4>
