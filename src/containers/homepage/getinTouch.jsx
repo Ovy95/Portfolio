@@ -2,12 +2,12 @@
 import React from 'react'
 import styled from "styled-components"
 
-import { Logo } from "../../components/profilePic/picture"
-import { DownArrow } from "../../components/ArrowsComponents/downArrow/index"
+
+import { UpArrow } from "../../components/ArrowsComponents/upArrow/index"
 import { Element, scroller } from 'react-scroll'
 import { Marginer } from "../../components/marginer";
 
-const AboutMeContainer = styled.div`
+const GetInTouchContainer = styled.div`
 width: auto;
 height: 100vh;
 position: relative;
@@ -27,36 +27,36 @@ flex-direction: column;
 align-items: center;
 `;
 
-const DownArrowContainer = styled.div`
+const UpArrowContainer = styled.div`
   position: absolute;
-  bottom: 25px;
+  top: 25px;
   left: 50%;
   transform: translateX(-50%);
 `
 
-export function AboutMe(props) {
+export function GetInTouch(props) {
 
   const scrollToProjectSection = () => {
     scroller.scrollTo("projectSection", { smooth: true, duration: 1500})
   }
 
   return (
-  <Element name="aboutMe">
-    <AboutMeContainer>
+  <Element name="getInTouch">
+    <GetInTouchContainer>
     <Marginer direction="vertical" margin="2em" />
-            <h1>Hi there 👋  </h1>
-            <Marginer direction="vertical" margin="3em" />
+    <UpArrowContainer onClick={scrollToProjectSection}>
+            <UpArrow/>
+    </UpArrowContainer>
+  
+    <h1>Get in touch</h1>
 
 
-            <h3>Welcome to my personal portfolio</h3>
-            <Marginer direction="vertical" margin="4em" />
 
-            <Logo></Logo>
-            <Marginer direction="vertical" margin="6em" />
-        <DownArrowContainer onClick={scrollToProjectSection}>
-            <DownArrow/>
-        </DownArrowContainer>
-    </AboutMeContainer>
+
+
+         
+        
+    </GetInTouchContainer>
   </Element>
   )
 }

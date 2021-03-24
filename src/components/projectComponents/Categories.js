@@ -14,8 +14,6 @@ const Categories = ({ categories,filterItems }) => {
           >
             {category}
           </button>
-
-
         );
       })}
     </div> 

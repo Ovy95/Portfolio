@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import {AboutMe} from "./aboutMe"
 import {ProjectSection } from "./projectsSection"
+import {GetInTouch} from "./getinTouch"
 
 
 const PageContainer = styled.div`
@@ -17,5 +18,6 @@ export function Homepage(props) {
   return <PageContainer>
            <AboutMe/>
            <ProjectSection/>
+           <GetInTouch/>
         </PageContainer>
 }   

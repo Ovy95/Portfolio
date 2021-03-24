@@ -3,7 +3,7 @@ import { Element, scroller } from 'react-scroll'
 import styled from 'styled-components'
 
 
-
+import { DownArrow } from "../../components/ArrowsComponents/downArrow/index"
 import { UpArrow } from "../../components/ArrowsComponents/upArrow/index"
 import { Marginer } from "../../components/marginer";
 import { Projects } from "../../components/projectComponents/index"
@@ -14,7 +14,7 @@ const ProjectContainer = styled(Element)`
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items:center
+  align-items:center;
 `;
 
 
@@ -25,30 +25,45 @@ const UpArrowContainer = styled.div`
 `
 
 
+const DownArrowContainer = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+`
+
+
 export function ProjectSection(props) {
-  const scrollToNextSection = () => {
+
+  const scrollToAboutMe = () => {
     scroller.scrollTo("aboutMe", { smooth: true, duration: 1500})
+  }
+  //This is the next page when created
+  const scrollToGetInTouchSection = () => {
+    scroller.scrollTo("getInTouch", { smooth: true, duration: 1500})
   }
 
     return (
       <Element name="projectSection">
     <ProjectContainer>
       
-      <UpArrowContainer onClick={scrollToNextSection} >
+      <UpArrowContainer onClick={scrollToAboutMe} >
         <UpArrow/>
       </UpArrowContainer>
       
-
-
-
-    <Marginer direction="vertical" margin="4em"/>
     <Marginer direction="vertical" margin="4em"/>
 
     <Projects/>
         
+
     <Marginer direction="vertical" margin="4em"/>
-    <Marginer direction="vertical" margin="4em"/>
-        
+        <DownArrowContainer onClick={scrollToGetInTouchSection} >
+        <DownArrow  />
+        </DownArrowContainer>
+
+
+    <Marginer direction="vertical" margin="2em"/>
     </ProjectContainer>
     </Element>
     )
