@@ -12,9 +12,11 @@ const ProjectsStyle = styled.div`
   position: relative;
   
   `
+  const allCategories = ['all',...new Set(items.map((item)=> item.category))]
+
 export function Projects(props){
   const [projectItems, setProjectItems] = useState(items);
-  const [categories, setcategories] = useState([]);
+  const [categories, setcategories] = useState(allCategories);
 
   const filterItems = (category) => {
     if(category === 'all'){
@@ -26,9 +28,11 @@ export function Projects(props){
   }
 
   return ( <ProjectsStyle>
-    <h2>These are my projects</h2>
-
-    <Categories filterItems={filterItems}/>
+    <div className="title">
+          <h2>our menu</h2>
+          <div className="underline"></div>
+        </div>
+    <Categories categories={categories} filterItems={filterItems}/>
     <ProjectList items={projectItems}/>
  
   </ProjectsStyle>

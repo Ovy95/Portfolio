@@ -40,14 +40,14 @@ export function ProjectSection(props) {
       
 
 
-    <Marginer direction="vertical" margin="20em"/>
+
     <Marginer direction="vertical" margin="4em"/>
-  
     <Marginer direction="vertical" margin="4em"/>
 
     <Projects/>
         
-        
+    <Marginer direction="vertical" margin="4em"/>
+    <Marginer direction="vertical" margin="4em"/>
         
     </ProjectContainer>
     </Element>
