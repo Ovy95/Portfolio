@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from "styled-components"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 import { UpArrow } from "../../components/ArrowsComponents/upArrow/index"
 import {  Element, scroller } from 'react-scroll'

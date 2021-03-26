@@ -13,7 +13,7 @@ display: inline-block;
 
 const LogoImg = styled.img`
 width: auto;
-height: 250px;
+height: 200px;
 margin-right: -15px;
 `;
 
