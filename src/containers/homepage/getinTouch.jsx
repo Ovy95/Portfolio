@@ -2,10 +2,20 @@
 import React from 'react'
 import styled from "styled-components"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { UpArrow } from "../../components/ArrowsComponents/upArrow/index"
-import { Button, Element, scroller } from 'react-scroll'
+import {  Element, scroller } from 'react-scroll'
 import { Marginer } from "../../components/marginer";
+
+//Style icons
+import { FaGithub,FaLinkedin,FaEnvelope,FaFilePdf } from "react-icons/fa";
+
+
+
+
+
+
 
 const GetInTouchContainer = styled.div`
 width: auto;
@@ -26,13 +36,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 `;
-const CvContainerButton = styled.div`
-width: 100%;
-height: 100%;
 
+const CvContainerButton = styled.div`
+height: auto;
 display: flex;
-flex-direction: column;
-align-items: center;
+flex-direction: row;
+
 `;
 
 const UpArrowContainer = styled.div`
@@ -41,7 +50,17 @@ const UpArrowContainer = styled.div`
   left: 50%;
   transform: translateX(-50%);
 `
-const link = "https://drive.google.com/file/d/1DrDYlk7VQ0FsRzFDc2hIao6t8v1jaXkK/view?usp=sharing"
+const GithubIcon = styled.div`
+margin-top: 3px;
+color : red;
+font-size: 30px;
+`
+
+
+const Resume = "https://drive.google.com/file/d/1DrDYlk7VQ0FsRzFDc2hIao6t8v1jaXkK/view?usp=sharing"
+const linkedin ="https://www.linkedin.com/in/jack-overton-40b7931a2/"
+const gitHub = "https://github.com/Ovy95"
+
 export function GetInTouch(props) {
 
   const scrollToProjectSection = () => {
@@ -55,18 +74,20 @@ export function GetInTouch(props) {
     <UpArrowContainer onClick={scrollToProjectSection}>
             <UpArrow/>
     </UpArrowContainer>
-    <Marginer direction="vertical" margin="12em" />
-    <h2>Get in touch</h2>
-
+    <Marginer direction="vertical" margin="1em" />
+    <h2>Let's make something awesome together</h2>
     
-    
-
-   
-
+    <h4>Get in touch down below by click on the links </h4>
+    <Marginer direction="vertical" margin="5em" />
 
     <CvContainerButton>
-          <a href={link} target="_blank" className='filter-btn'>Resume</a>
+    <a href={gitHub} target="_blank" className='filter-btn'> <FaGithub/> Github</a>
+    <a href={linkedin} target="_blank" className='filter-btn'><FaLinkedin/>Linkedin</a>
+    <a href={Resume} target="_blank" className='filter-btn'> <FaFilePdf/> Resume</a> 
+    < a href="mailto:jackoverton21@hotmail.com" className='filter-btn' > <FaEnvelope/> Email me here</a>
     </CvContainerButton>
+    <Marginer direction="vertical" margin="3em" />
+    <p>Thank you for visiting</p>
     </GetInTouchContainer>
   </Element>
   )
