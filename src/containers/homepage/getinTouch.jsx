@@ -55,6 +55,11 @@ margin-top: 3px;
 color : red;
 font-size: 30px;
 `
+const Icons = styled.div`
+
+color : red;
+padding: 0.375rem 0.75rem;
+`
 
 
 const Resume = "https://drive.google.com/file/d/1DrDYlk7VQ0FsRzFDc2hIao6t8v1jaXkK/view?usp=sharing"
@@ -81,10 +86,10 @@ export function GetInTouch(props) {
     <Marginer direction="vertical" margin="5em" />
 
     <CvContainerButton>
-    <a href={gitHub} target="_blank" className='filter-btn'> <FaGithub/> Github</a>
-    <a href={linkedin} target="_blank" className='filter-btn'><FaLinkedin/>Linkedin</a>
-    <a href={Resume} target="_blank" className='filter-btn'> <FaFilePdf/> Resume</a> 
-    < a href="mailto:jackoverton21@hotmail.com" className='filter-btn' > <FaEnvelope/> Email me here</a>
+    <a href={gitHub} target="_blank" className='filter-btn'> <FaGithub size=".8rem" style={{Icons}} /> Github</a>
+    <a href={linkedin} target="_blank" className='filter-btn'><FaLinkedin size=".8rem" padding="1px"/>Linkedin</a>
+    <a href={Resume} target="_blank" className='filter-btn'> <FaFilePdf size=".8rem"/> Resume</a> 
+    < a href="mailto:jackoverton21@hotmail.com" className='filter-btn' > <FaEnvelope size=".8rem"/> Email me here</a>
     </CvContainerButton>
     <Marginer direction="vertical" margin="3em" />
     <p>Thank you for visiting</p>
