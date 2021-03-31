@@ -55,8 +55,6 @@ export function AboutMe(props) {
     <AboutMeContainer>
       
     <Marginer direction="vertical" margin="5em" />
-    {/* <SideBarNav></SideBarNav> */}
-
 
             <h2>Welcome to my personal portfolio👋  </h2>
             <Marginer direction="vertical" margin="4em" />

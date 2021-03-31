@@ -15,6 +15,7 @@ const ProjectContainer = styled(Element)`
   display: flex;
   flex-direction: column;
   align-items:center;
+  background-color: white;
 `;
 
 
@@ -47,7 +48,7 @@ export function ProjectSection(props) {
     return (
       <Element name="projectSection">
     <ProjectContainer>
-      
+
       <UpArrowContainer onClick={scrollToExperinceSection} >
         <UpArrow/>
       </UpArrowContainer>

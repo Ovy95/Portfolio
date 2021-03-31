@@ -6,7 +6,8 @@ import styled from 'styled-components'
 import { DownArrow } from "../../components/ArrowsComponents/downArrow/index"
 import { UpArrow } from "../../components/ArrowsComponents/upArrow/index"
 import { Marginer } from "../../components/marginer";
-import { Projects } from "../../components/projectComponents/index"
+import { Experince } from "../../components/experince/index"
+
 
 
 const ExperinceContainer = styled(Element)`
@@ -27,12 +28,20 @@ const UpArrowContainer = styled.div`
 
 const DownArrowContainer = styled.div`
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items:center;
-`
+  
+  // position: bottom;
+  bottom: 100px;
 
+`
+// const DownArrowContainer = styled.div`
+//   position: absolute;
+//   bottom: 25px;
+//   left: 50%;
+//   transform: translateX(-50%);
+// `
 
 export function ExperinceSection(props) {
 
@@ -41,29 +50,28 @@ export function ExperinceSection(props) {
   }
   //This is the next page when created
   const scrollToProjectSectionSection = () => {
+    console.log("EXperince CLCIKING")
     scroller.scrollTo("projectSection", { smooth: true, duration: 1500})
   }
 
     return (
       <Element name="experinceSection">
     <ExperinceContainer>
-      
+
       <UpArrowContainer onClick={scrollToAboutMe} >
         <UpArrow/>
       </UpArrowContainer>
       
-    <Marginer direction="vertical" margin="4em"/>
-      <h1>Experince Page</h1>
-    {/* <Projects/> */}
-        
 
-    <Marginer direction="vertical" margin="4em"/>
+
+    <Experince/>
+
+
+    
         <DownArrowContainer onClick={scrollToProjectSectionSection} >
         <DownArrow  />
         </DownArrowContainer>
-
-
-    <Marginer direction="vertical" margin="2em"/>
+        <Marginer direction="vertical" margin="2em"/>
     </ExperinceContainer>
     </Element>
     )
