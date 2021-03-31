@@ -7,10 +7,13 @@ import { DownArrow } from "../../components/ArrowsComponents/downArrow/index"
 import { Element, scroller } from 'react-scroll'
 import { Marginer } from "../../components/marginer";
 
+
+
+// position: relative;
 const AboutMeContainer = styled.div`
 width: auto;
 height: 100vh;
-position: relative;
+
 background-color: white;
 display: flex;
 justify-content: center;
@@ -44,14 +47,17 @@ const DownArrowContainer = styled.div`
 export function AboutMe(props) {
 
   const scrollToProjectSection = () => {
-    scroller.scrollTo("projectSection", { smooth: true, duration: 1500})
+    scroller.scrollTo("experinceSection", { smooth: true, duration: 1500})
   }
 
   return (
   <Element name="aboutMe">
     <AboutMeContainer>
-    <Marginer direction="vertical" margin="2em" />
-          
+      
+    <Marginer direction="vertical" margin="5em" />
+    {/* <SideBarNav></SideBarNav> */}
+
+
             <h2>Welcome to my personal portfolio👋  </h2>
             <Marginer direction="vertical" margin="4em" />
 

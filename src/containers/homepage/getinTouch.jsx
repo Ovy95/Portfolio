@@ -8,6 +8,7 @@ import { UpArrow } from "../../components/ArrowsComponents/upArrow/index"
 import {  Element, scroller } from 'react-scroll'
 import { Marginer } from "../../components/marginer";
 
+
 //Style icons
 import { FaGithub,FaLinkedin,FaEnvelope,FaFilePdf } from "react-icons/fa";
 
