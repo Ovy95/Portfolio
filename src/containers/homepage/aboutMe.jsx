@@ -28,14 +28,6 @@ align-items: center;
 text-align: center;
 `;
 
-const BackgroundFilter = styled.div`
-width: 100%;
-height: 100%;
-background-color: rgba(55, 55, 55, 0.89);
-display: flex;
-flex-direction: column;
-align-items: center;
-`;
 
 const DownArrowContainer = styled.div`
   position: absolute;
@@ -62,6 +54,7 @@ export function AboutMe(props) {
             <Logo></Logo>
             <Marginer direction="vertical" margin="1em" />
             <h4>Crafting stone to Crafting Code</h4>
+            <Marginer direction="vertical" margin="1em" />
             <TextContainer>
             <p> Hi, I'm Jack Overton Stonemason turned Software Developer. Makers Academy Graduate looking to land my first tech role. Check out my projects down below to see what I have been up to. Any questions check out the get in touch section.</p>
             </TextContainer>

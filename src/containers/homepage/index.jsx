@@ -18,13 +18,17 @@ flex-direction: column;
 padding: 0;
 `;
 
+
+
+
+
 export function Homepage(props) {
  
   const [show, setShow] = useState(false) // True is open already
   return  (
 
   <PageContainer>
-         <Toolbar show={show} setShow={setShow}></Toolbar>
+         <Toolbar  show={show} setShow={setShow}></Toolbar>
          {show?<SideDrawer setShow={setShow}/>:null}
          {show?<Backdrop></Backdrop>:null}
 
