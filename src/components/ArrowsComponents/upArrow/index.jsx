@@ -7,7 +7,7 @@ const ArrowContainer = styled.div`
 width: 50px;
 height: 50px;
 border-radius : 50%;
-background-color : red;
+background-color : var(--clr-primary-5);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -18,7 +18,9 @@ cursor: pointer;
  
 
 &:hover {
-  border :2px solid black
+  color: var(--clr-primary-5);
+  background: var(--clr-primary-7);
+
 }
 `;
 

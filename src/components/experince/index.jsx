@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { FaAngleDoubleRight } from 'react-icons/fa'
+import { FaAngleDoubleRight,FaFilePdf } from 'react-icons/fa'
+
 import "./index.css"
 import items from "./experince"
-
+const Resume = "https://drive.google.com/file/d/1DrDYlk7VQ0FsRzFDc2hIao6t8v1jaXkK/view?usp=sharing"
 const experince = [
   {id:"recAGJfiU4CeaV0HL",
     order:3,
@@ -37,25 +38,12 @@ const experince = [
     company:"Makers"
   }
 ]
-const experience = [items]
-
 
 export function Experince(props){
-
-
 
   const [jobs, setJobs] = useState(experince)
   const [value, setValue] = useState(0)
 
-
-
-  // console.log(experince[0]["company"])
-
-
-
-
-
-  // const { company, dates, duties, title } = jobs[value]
   let { company, dates, duties, title } = jobs[value]
   return (
     <section className="section">
@@ -64,7 +52,7 @@ export function Experince(props){
         <div className="underline"></div>
       </div>
       <div className="jobs-center">
-        {/* btn container */}
+
         <div className="btn-container-experince">
           
           {experince.map((item, index) => {
@@ -94,9 +82,9 @@ export function Experince(props){
           })}
         </article>
       </div>
-      <button type="button" className="btn">
-        more info
-      </button>
+      {/* <button type="button" className="btn"></button> */}
+      <a href={Resume} target="_blank" className='btn'> <FaFilePdf size=".8rem"/> Resume</a> 
+      
     </section>
   )
 }
