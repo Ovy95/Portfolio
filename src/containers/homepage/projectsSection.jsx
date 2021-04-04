@@ -46,26 +46,29 @@ export function ProjectSection(props) {
   }
 
     return (
-      <Element name="projectSection">
+      
     <ProjectContainer>
 
       <UpArrowContainer onClick={scrollToExperinceSection} >
+      <Marginer direction="vertical" margin="1em"/>
         <UpArrow/>
       </UpArrowContainer>
       
-    <Marginer direction="vertical" margin="4em"/>
 
-    <Projects/>
+    <Marginer direction="vertical" margin="4em"/>
+    <Element name="projectSection">
+    <Marginer direction="vertical" margin="2.5em"/>
+    <Projects/> 
         
 
     <Marginer direction="vertical" margin="4em"/>
         <DownArrowContainer onClick={scrollToGetInTouchSection} >
         <DownArrow  />
         </DownArrowContainer>
-
+        </Element>
 
     <Marginer direction="vertical" margin="2em"/>
     </ProjectContainer>
-    </Element>
+   
     )
 }

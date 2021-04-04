@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Marginer } from '../components/marginer'
 import { Axios, db } from '../firebase/firebaseConfig'
 import './index.css'
 
@@ -40,8 +41,12 @@ const ContactForm = () => {
   }
 
   return (
+
     <>
+    <Marginer direction="vertical" margin="1em" />
+     <h2>Let's make something awesome together</h2>
       <form onSubmit={handleSubmit}>
+
         <input
           type="text"
           name="name"

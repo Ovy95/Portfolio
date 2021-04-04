@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaAngleDoubleRight,FaFilePdf } from 'react-icons/fa'
 
 import "./index.css"
-import items from "./experince"
+
 const Resume = "https://drive.google.com/file/d/1DrDYlk7VQ0FsRzFDc2hIao6t8v1jaXkK/view?usp=sharing"
 const experince = [
   {id:"recAGJfiU4CeaV0HL",

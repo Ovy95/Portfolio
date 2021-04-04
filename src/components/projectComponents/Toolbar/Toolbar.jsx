@@ -19,15 +19,15 @@ export function Toolbar( {show,setShow} ) {
       <div classname="ToggleButtonForStateChange">
         <DrawerToggleButton show={show} setShow={setShow} />
       </div>
-      <div className="toolbar__logo"><a href="/">THE LOGO</a></div>
+
       <div className="spacer" />
       <div className="toolbar_navigation-items">
         <ul>
           <li>
-            <a href="/">Products</a>
+          Toggle Button
           </li>
           <li>
-            <a href="/">Users</a>
+
           </li>
         </ul>
       </div>

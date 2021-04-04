@@ -55,24 +55,30 @@ export function ExperinceSection(props) {
   }
 
     return (
-      <Element name="experinceSection">
+      
     <ExperinceContainer>
 
       <UpArrowContainer onClick={scrollToAboutMe} >
+      <Marginer direction="vertical" margin="1em"/>
         <UpArrow/>
       </UpArrowContainer>
-      
 
+     
+      <Marginer direction="vertical" margin="2em"/>
 
-    <Experince/>
+      <Element name="experinceSection">
+    
+    
+      <Experince/>
 
-
+    </Element>
     
         <DownArrowContainer onClick={scrollToProjectSectionSection} >
         <DownArrow  />
         </DownArrowContainer>
         <Marginer direction="vertical" margin="2em"/>
+       
     </ExperinceContainer>
-    </Element>
+    
     )
 }

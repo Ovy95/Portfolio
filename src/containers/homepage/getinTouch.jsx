@@ -62,20 +62,11 @@ export function GetInTouch(props) {
     <GetInTouchContainer>
     <Marginer direction="vertical" margin="2em" />
     <UpArrowContainer onClick={scrollToProjectSection}>
+      
             <UpArrow/>
-    </UpArrowContainer>
-    <Marginer direction="vertical" margin="1em" />
-    <h2>Let's make something awesome together</h2>
-    
-    <h4>Get in touch down below by click on the links </h4>
-    <Marginer direction="vertical" margin="5em" />
 
-    <CvContainerButton>
-    <a href={gitHub} target="_blank" className='filter-btn'> <FaGithub size=".8rem" style={{Icons}} /> Github</a>
-    <a href={linkedin} target="_blank" className='filter-btn'><FaLinkedin size=".8rem" padding="1px"/>Linkedin</a>
-    < a href="mailto:jackoverton21@hotmail.com" className='filter-btn' > <FaEnvelope size=".8rem"/> Email me here</a>
-    </CvContainerButton>
-    <Marginer direction="vertical" margin="3em" />
+    </UpArrowContainer>
+   
     <ContactForm></ContactForm>
     <p>Thank you for visiting</p>
     </GetInTouchContainer>

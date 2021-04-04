@@ -10,15 +10,28 @@
   padding: 0;
   box-sizing: border-box;
 
+
 }
 
 .toggle-button:focus {
   outline: none;
 }
 
-
 .toggle-button__line {
   width: 30px;
   height: 2px;
   background: white;
+  animation: bounce 4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -38,7 +38,7 @@ const DownArrowContainer = styled.div`
 
 export function AboutMe(props) {
 
-  const scrollToProjectSection = () => {
+  const scrollToExperinceSection = () => {
     scroller.scrollTo("experinceSection", { smooth: true, duration: 1500})
   }
 
@@ -59,7 +59,7 @@ export function AboutMe(props) {
             <p> Hi, I'm Jack Overton Stonemason turned Software Developer. Makers Academy Graduate looking to land my first tech role. Check out my projects down below to see what I have been up to. Any questions check out the get in touch section.</p>
             </TextContainer>
             <Marginer direction="vertical" margin="6em" />
-        <DownArrowContainer onClick={scrollToProjectSection}>
+        <DownArrowContainer onClick={scrollToExperinceSection}>
             <DownArrow/>
         </DownArrowContainer>
     </AboutMeContainer>
