@@ -50,7 +50,7 @@ export function SideDrawer( {setShow} ) {
           
           <button className='filter-btn' a href={gitHub} target="_blank" > <FaGithub margin-top = "1rem" /> Github </button>
           
-          <button className='filter-btn' href={linkedin} target="_blank" className='filter-btn'><FaLinkedin size="1rem" padding="1px"/> Linkedin</button>
+          <button className='filter-btn' href={linkedin} target="_blank"><FaLinkedin size="1rem" padding="1px"/> Linkedin</button>
           <button className='filter-btn' href={Resume} target="_blank"><FaFilePdf size=".8rem"/> Resume</button> 
           <Marginer direction="vertical" margin="15em" />
 

@@ -41,7 +41,7 @@ const experince = [
 
 export function Experince(props){
 
-  const [jobs, setJobs] = useState(experince)
+  const [jobs] = useState(experince)
   const [value, setValue] = useState(0)
 
   let { company, dates, duties, title } = jobs[value]
@@ -83,7 +83,7 @@ export function Experince(props){
         </article>
       </div>
       {/* <button type="button" className="btn"></button> */}
-      <a href={Resume} target="_blank" className='btn'> <FaFilePdf size=".8rem"/> Resume</a> 
+      <a href={Resume} target="_blank" className='btn' rel="noreferrer"> <FaFilePdf size=".8rem"/> Resume</a> 
       
     </section>
   )

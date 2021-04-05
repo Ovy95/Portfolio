@@ -16,7 +16,7 @@ const ProjectsStyle = styled.div`
 
 export function Projects(props){
   const [projectItems, setProjectItems] = useState(items);
-  const [categories, setcategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
 
   const filterItems = (category) => {
     if(category === 'all'){
@@ -29,9 +29,10 @@ export function Projects(props){
 
   return ( <ProjectsStyle>
 
-          <h2>My Projects</h2>
-
-          
+ <div className="title">
+ <h2>My Projects</h2>
+ <div className="underline"></div>
+ </div>
     <Categories categories={categories} filterItems={filterItems}/>
 
     <ProjectList items={projectItems}/>

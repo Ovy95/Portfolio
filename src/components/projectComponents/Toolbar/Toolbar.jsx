@@ -1,6 +1,6 @@
 import React from 'react'
 import { DrawerToggleButton } from "../SideDrawer/DrawerToggleButton";
-import { SideDrawer } from "../SideDrawer/SideDrawer";
+
 import './Toolbar.css'
 import styled from "styled-components";
 
