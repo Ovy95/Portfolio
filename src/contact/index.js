@@ -44,15 +44,19 @@ const ContactForm = () => {
 
     <>
     <Marginer direction="vertical" margin="1em" />
-     <h2>Let's make something awesome together</h2>
-      <form onSubmit={handleSubmit}>
 
+     <h2>Let's make something awesome together</h2>
+    
+
+      <form onSubmit={handleSubmit}>
+      <div className="underLineTitle"></div>
         <input
           type="text"
           name="name"
           placeholder="Name"
           onChange={updateInput}
           value={formData.name || ''}
+
         />
         <input
           type="email"

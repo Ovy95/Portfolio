@@ -24,7 +24,7 @@ export function Toolbar( {show,setShow} ) {
       <div className="toolbar_navigation-items">
         <ul>
           <li>
-          Toggle Button
+
           </li>
           <li>
 

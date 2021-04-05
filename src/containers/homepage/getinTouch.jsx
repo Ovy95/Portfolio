@@ -60,15 +60,15 @@ export function GetInTouch(props) {
   return (
   <Element name="getInTouch">
     <GetInTouchContainer>
-    <Marginer direction="vertical" margin="2em" />
+    <Marginer direction="vertical" margin="6em" />
     <UpArrowContainer onClick={scrollToProjectSection}>
-      
+    <Marginer direction="vertical" margin="1em" />
             <UpArrow/>
 
     </UpArrowContainer>
-   
+    <Marginer direction="vertical" margin="4em" />
     <ContactForm></ContactForm>
-    <p>Thank you for visiting</p>
+    
     </GetInTouchContainer>
   </Element>
   )

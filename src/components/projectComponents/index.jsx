@@ -28,10 +28,10 @@ export function Projects(props){
   }
 
   return ( <ProjectsStyle>
-    <div className="title">
+
           <h2>My Projects</h2>
-          <div className="underline"></div>
-        </div>
+
+          
     <Categories categories={categories} filterItems={filterItems}/>
 
     <ProjectList items={projectItems}/>
