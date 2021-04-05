@@ -12,6 +12,7 @@
     "axios": "^0.21.1",
     "emailjs-com": "^2.6.4",
     "firebase": "^8.3.2",
+    "firebase-functions": "^3.13.2",
     "node-sass": "^5.0.0",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.1",
