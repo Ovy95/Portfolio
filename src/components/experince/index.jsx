@@ -3,7 +3,7 @@ import { FaAngleDoubleRight,FaFilePdf } from 'react-icons/fa'
 
 import "./index.css"
 
-const Resume = "https://drive.google.com/file/d/1D_gU71q5MyjWMoQOaWN_yIJhUyfSKHer/view"
+const Resume = "https://drive.google.com/file/d/1DrDYlk7VQ0FsRzFDc2hIao6t8v1jaXkK/view?usp=sharing"
 const experince = [
   {id:"recAGJfiU4CeaV0HL",
     order:3,
