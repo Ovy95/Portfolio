@@ -20,3 +20,10 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.side-drawer a{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

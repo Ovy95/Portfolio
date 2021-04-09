@@ -41,17 +41,16 @@ export function SideDrawer( {setShow} ) {
 
           <button className='filter-btn' onClick={scrollToAboutMeSection}>About Me</button>
           
-
-          
-          
           <button className='filter-btn' onClick ={scrollToExperinceSection} >experience </button>
           <button className='filter-btn' onClick ={scrollToProjectSection}>Projects</button>
           <button className='filter-btn' onClick = {scrollToGetInTouchSection}>Contact Me</button>
           
-          <button className='filter-btn' a href={gitHub} target="_blank" > <FaGithub margin-top = "1rem" /> Github </button>
+
+          <a href={gitHub} target="_blank"><button className='filter-btn'  > <FaGithub margin-top = "1rem" /> Github </button></a>
+          <a href={linkedin} target="_blank"><button type= "submit" className='filter-btn' ><FaLinkedin size="1rem" padding="1px"/> Linkedin</button></a>
+          <a href={Resume} target="_blank" ><button className='filter-btn'> <FaFilePdf size=".8rem"/> Resume</button> </a> 
+
           
-          <button className='filter-btn' href={linkedin} target="_blank"><FaLinkedin size="1rem" padding="1px"/> Linkedin</button>
-          <button className='filter-btn' href={Resume} target="_blank"><FaFilePdf size=".8rem"/> Resume</button> 
           <Marginer direction="vertical" margin="15em" />
 
      
