@@ -12,7 +12,7 @@ import { Experince } from "../../components/experince/index"
 
 const ExperinceContainer = styled(Element)`
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -20,9 +20,13 @@ const ExperinceContainer = styled(Element)`
 
 
 const UpArrowContainer = styled.div`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  position: top;
+  bottom: 0px;
 `
 
 
@@ -31,17 +35,18 @@ const DownArrowContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items:center;
-  
-  // position: bottom;
-  bottom: 100px;
+
+  bottom: 0px;
 
 `
-// const DownArrowContainer = styled.div`
-//   position: absolute;
-//   bottom: 25px;
-//   left: 50%;
-//   transform: translateX(-50%);
-// `
+const SpacerContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  position: bottom;
+  height: 50px;
+`
 
 export function ExperinceSection(props) {
 
@@ -57,22 +62,22 @@ export function ExperinceSection(props) {
     return (
       
     <ExperinceContainer>
-
+ <Element name="experinceSection">
+<SpacerContainer></SpacerContainer>
       <UpArrowContainer onClick={scrollToAboutMe} >
-      <Marginer direction="vertical" margin="1em"/>
         <UpArrow/>
       </UpArrowContainer>
 
      
       <Marginer direction="vertical" margin="2em"/>
 
-      <Element name="experinceSection">
+     
     
     
       <Experince/>
 
     </Element>
-    
+    <Marginer direction="vertical" margin="2em"/>
         <DownArrowContainer onClick={scrollToProjectSectionSection} >
         <DownArrow  />
         </DownArrowContainer>

@@ -11,18 +11,36 @@ import { Projects } from "../../components/projectComponents/index"
 
 const ProjectContainer = styled(Element)`
   width: 100%;
-  height: auto;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items:center;
   background-color: white;
+
 `;
 
 
+// const UpArrowContainer = styled.div`
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+// `
 const UpArrowContainer = styled.div`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  position: top;
+  bottom: 0px;
+`
+const SpacerContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  position: bottom;
+  height: 50px;
 `
 
 
@@ -48,16 +66,21 @@ export function ProjectSection(props) {
     return (
       
     <ProjectContainer>
+      <Element name="projectSection">
+<SpacerContainer></SpacerContainer>
+
+
+
+
 
       <UpArrowContainer onClick={scrollToExperinceSection} >
-      <Marginer direction="vertical" margin="1em"/>
         <UpArrow/>
       </UpArrowContainer>
-      
+      <Marginer direction="vertical" margin="4em"/>
 
-    <Marginer direction="vertical" margin="4em"/>
-    <Element name="projectSection">
-    <Marginer direction="vertical" margin="2.5em"/>
+
+    
+
     <Projects/> 
         
 

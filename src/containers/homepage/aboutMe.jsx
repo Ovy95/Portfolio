@@ -11,7 +11,7 @@ import { Marginer } from "../../components/marginer";
 
 // position: relative;
 const AboutMeContainer = styled.div`
-width: auto;
+width: 100%;
 height: 100vh;
 
 background-color: white;
