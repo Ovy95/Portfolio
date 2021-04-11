@@ -12,7 +12,7 @@ import { Experince } from "../../components/experince/index"
 
 const ExperinceContainer = styled(Element)`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -35,10 +35,10 @@ const DownArrowContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items:center;
-
-  bottom: 0px;
+  bottom: 10px;
 
 `
+
 const SpacerContainer = styled.div`
   width: 100%;
   display: flex;
@@ -67,17 +67,9 @@ export function ExperinceSection(props) {
       <UpArrowContainer onClick={scrollToAboutMe} >
         <UpArrow/>
       </UpArrowContainer>
+    <Experince/>
+ </Element>
 
-     
-      <Marginer direction="vertical" margin="2em"/>
-
-     
-    
-    
-      <Experince/>
-
-    </Element>
-    <Marginer direction="vertical" margin="2em"/>
         <DownArrowContainer onClick={scrollToProjectSectionSection} >
         <DownArrow  />
         </DownArrowContainer>
