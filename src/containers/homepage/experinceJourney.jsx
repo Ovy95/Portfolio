@@ -55,7 +55,6 @@ export function ExperinceSection(props) {
   }
   //This is the next page when created
   const scrollToProjectSectionSection = () => {
-    console.log("EXperince CLCIKING")
     scroller.scrollTo("projectSection", { smooth: true, duration: 1500})
   }
 

@@ -19,12 +19,6 @@ const ProjectContainer = styled(Element)`
 
 `;
 
-
-// const UpArrowContainer = styled.div`
-//   position: absolute;
-//   left: 50%;
-//   transform: translateX(-50%);
-// `
 const UpArrowContainer = styled.div`
 
   width: 100%;
@@ -58,7 +52,7 @@ export function ProjectSection(props) {
   const scrollToExperinceSection = () => {
     scroller.scrollTo("experinceSection", { smooth: true, duration: 1500})
   }
-  //This is the next page when created
+
   const scrollToGetInTouchSection = () => {
     scroller.scrollTo("getInTouch", { smooth: true, duration: 1500})
   }

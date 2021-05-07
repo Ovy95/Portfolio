@@ -19,9 +19,6 @@ padding: 0;
 `;
 
 
-
-
-
 export function Homepage(props) {
  
   const [show, setShow] = useState(false) // True is open already

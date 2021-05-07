@@ -41,9 +41,10 @@ const menu = [
   },
   {
     id: 6,
+    link: 'https://github.com/Ovy95/Portfolio',
     title: 'Portfolio',
     category: 'React',
-    img: './images/logo192.png',
+    img: './images/Portfolio.png',
     desc: `This is what your currently using at the moment. This is a react project to help me show of my projects. Also to upskill knowledge of using React.`,
   },
   {
