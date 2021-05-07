@@ -2,7 +2,7 @@ const menu = [
   {
     id: 1,
     link: 'https://github.com/Acknowledge-App/Acknowledge',
-    title: 'Achknowledge',
+    title: 'Acknowledge',
     category: 'React',
     img: './images/1.png',
     desc: `Acknowledge is an app to save your achievements over your day. A lot of achievements that we make day to day are usually lost in the noise of our busy lives; sometimes small, sometimes intangible but Acknowledge seeks to change that. With Acknowledge you can record your day to day achievements and place where they fit into your lives.`,
