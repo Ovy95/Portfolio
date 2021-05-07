@@ -16,7 +16,6 @@ const ProjectContainer = styled(Element)`
   flex-direction: column;
   align-items:center;
   background-color: white;
-
 `;
 
 const UpArrowContainer = styled.div`
@@ -63,17 +62,10 @@ export function ProjectSection(props) {
       <Element name="projectSection">
 <SpacerContainer></SpacerContainer>
 
-
-
-
-
       <UpArrowContainer onClick={scrollToExperinceSection} >
         <UpArrow/>
       </UpArrowContainer>
       <Marginer direction="vertical" margin="4em"/>
-
-
-    
 
     <Projects/> 
         
@@ -82,7 +74,7 @@ export function ProjectSection(props) {
         <DownArrowContainer onClick={scrollToGetInTouchSection} >
         <DownArrow  />
         </DownArrowContainer>
-        </Element>
+      </Element>
 
     <Marginer direction="vertical" margin="2em"/>
     </ProjectContainer>

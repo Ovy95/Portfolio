@@ -66,14 +66,14 @@ export function GetInTouch(props) {
 
     <UpArrowContainer onClick={scrollToProjectSection}>
 
-            <UpArrow/>
+        <UpArrow/>
 
     </UpArrowContainer>
     
-    <Marginer direction="vertical" margin="4em" />
-    <ContactForm></ContactForm>
+      <Marginer direction="vertical" margin="4em" />
+       <ContactForm></ContactForm>
     </Element>
-    <Marginer direction="vertical" margin="5em" />
+      <Marginer direction="vertical" margin="5em" />
     <DownArrowContainer></DownArrowContainer>
     </GetInTouchContainer>
   

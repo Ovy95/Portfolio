@@ -29,7 +29,6 @@ export function Homepage(props) {
          {show?<SideDrawer setShow={setShow}/>:null}
          {show?<Backdrop></Backdrop>:null}
 
-
            <AboutMe/>
 
           <ExperinceSection/>
